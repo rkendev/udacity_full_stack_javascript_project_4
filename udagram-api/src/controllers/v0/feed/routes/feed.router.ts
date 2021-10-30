@@ -57,26 +57,41 @@ router.get('/signed-url/:fileName',
 // Create feed with metadata
 router.post('/',
     requireAuth,
-    async (req: Request, res: Response) => {
+  async (req: Request, res: Response) => {
+      console.log('====post');
       const caption = req.body.caption;
       const fileName = req.body.url; // same as S3 key name
+      console.log('====caption ' + caption);
+      console.log('====fileName ' + fileName);
 
       if (!caption) {
+        console.log('====Caption is required or malformed.');
         return res.status(400).send({message: 'Caption is required or malformed.'});
       }
 
+      console.log('past !caption');
+
       if (!fileName) {
+        console.log('====File url is required.');
         return res.status(400).send({message: 'File url is required.'});
       }
+
+      console.log('past !fileName');
 
       const item = await new FeedItem({
         caption: caption,
         url: fileName,
       });
 
+      console.log('await new FeedItem');
+
       const savedItem = await item.save();
 
+      console.log('past savedItem');
+
+
       savedItem.url = AWS.getGetSignedUrl(savedItem.url);
+      console.log('AWS.getGetSignedUrl(savedItem.url)');
       res.status(201).send(savedItem);
     });
 
