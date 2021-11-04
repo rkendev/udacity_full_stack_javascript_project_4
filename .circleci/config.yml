@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.1.0
+  eb: circleci/aws-elastic-beanstalk@1.0.0
+  aws-cli: circleci/aws-cli@2.0.2
+jobs:
+  build:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - node/install
+      - checkout
+      - run:
+          name: hello
+          command: 
+            echo "hello world" 
+ 
