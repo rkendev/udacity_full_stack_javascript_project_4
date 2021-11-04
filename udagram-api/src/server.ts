@@ -43,7 +43,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   const app = express();
   console.log("test6");
   //const port = 8080;
-  const port = config.server_port || 5432;
+  const port = config.server_port || 9001;
   console.log("test7");
 
   app.use(bodyParser.json());
@@ -61,7 +61,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   });
 
   // Start the Server
-  app.listen(port, () => {
+  app.listen(process.env.PORT, () => {
     console.log(`server running ${process.env.URL}`);
     console.log(`press CTRL+C to stop server`);
   });
