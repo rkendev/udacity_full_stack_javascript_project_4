@@ -10,8 +10,16 @@ jobs:
     steps:
       - node/install
       - checkout
+      - aws-cli/setup
+      - eb/setup
       - run:
-          name: hello
-          command: 
-            echo "hello world" 
+          name: Back-End Install
+          command: npm run backend:install
+      - run:
+          name: Back-End Build
+          command: npm run backend:build
+      - run:
+          name: Deploy Back-End
+          command: npm run backend:deploy
+
  
