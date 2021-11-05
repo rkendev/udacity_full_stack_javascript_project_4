@@ -5,11 +5,11 @@ branch-defaults:
   deploy:
     artifact: www/Archive.zip
   main:
-    environment: Udagramapirkenenv-env
+    environment: null
 global:
   application_name: Udagramapirken-env
   branch: null
-  default_ec2_keyname: null
+  default_ec2_keyname: udagram-api-kp
   default_platform: Node.js 12 running on 64bit Amazon Linux 2
   default_region: eu-central-1
   include_git_submodules: true
