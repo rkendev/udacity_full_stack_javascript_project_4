@@ -12,8 +12,8 @@ export const config = {
   //aws_region: "eu-central-1",
   aws_profile: process.env.AWS_PROFILE,
   aws_media_bucket: process.env.AWS_BUCKET,
-  aws_access_key: process.env.AWS_ACCESS_KEY,
-  aws_secret: process.env.AWS_SECRET,  
+  aws_access_key: process.env.AWS_ACCESS_KEY_ID,
+  aws_secret: process.env.AWS_SECRET_ACCESS_KEY,  
   //aws_media_bucket: "udagram-full-stack-js-bucket",
   url: process.env.URL,
   jwt: {
