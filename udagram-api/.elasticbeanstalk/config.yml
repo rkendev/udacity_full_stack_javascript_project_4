@@ -1,11 +1,11 @@
 branch-defaults:
   default:
-    environment: Udagramapirken-env-1
+    environment: Udagramapirken-env
     group_suffix: null
   deploy:
     artifact: www/Archive.zip
   main:
-    environment: Udagramapirken-env-1
+    environment: Udagramapirken-env
 global:
   application_name: Udagramapirken
   branch: null
