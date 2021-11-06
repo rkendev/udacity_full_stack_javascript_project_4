@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "aws s3 cp --recursive --region=eu-central-1 --acl public-read ./www s3://udagram-full-stack-js-bucket/"
   },
   "private": true,
   "dependencies": {
