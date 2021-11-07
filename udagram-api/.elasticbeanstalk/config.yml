@@ -2,7 +2,7 @@ branch-defaults:
   default:
     environment: Udagramapirkenenv-env-1
 global:
-  application_name: Udagramapirken-env
+  application_name: Udagramapirkenenv
   branch: null
   default_ec2_keyname: udagram-api-kp
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
