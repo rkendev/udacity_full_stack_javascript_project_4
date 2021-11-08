@@ -11,21 +11,6 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
 
-
-  console.log('=====config.aws_access_key '+ config.username);
-  console.log('=====config.aws_access_key '+ config.password);
-  console.log('=====config.database '+ config.database);
-  console.log('=====config.host '+ config.host);
-  console.log('=====config.port '+ config.port);
-  console.log('=====config.aws_media_bucket '+ config.aws_media_bucket);
-  console.log('=====config.aws_region '+ config.aws_region);
-  console.log('=====config.jwt.secret '+ config.jwt.secret)
-  console.log('=====config.aws_access_key '+ config.aws_access_key);
-  console.log('======config.aws_secret '+config.aws_secret) 
-  console.log('=====config.port '+ config.port);
-  console.log('=====config.server_port '+ config.server_port);
-
-
   console.log("test1");
   dotenv.config();
   console.log("test2");
