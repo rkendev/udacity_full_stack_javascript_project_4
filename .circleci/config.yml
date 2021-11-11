@@ -5,6 +5,9 @@ orbs: # import reusable packages of configuration in the namespace
   aws-cli: circleci/aws-cli@2.0.2
 jobs: #collection of steps to be executed in signle unit
   build:
+    branches:
+      only:
+        - main
     docker:
       - image: "cimg/base:stable"
     steps: # set the collection of executable
