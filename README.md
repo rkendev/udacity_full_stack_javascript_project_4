@@ -28,5 +28,5 @@ This project contains two different test suite: unit tests and End-To-End tests(
 [License](LICENSE.txt)
 
 # Badge:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![CircleCI](https://circleci.com/gh/rkendev/udacity_full_stack_javascript_project_4.svg?style=svg)](https://app.circleci.com/pipelines/github/rkendev/udacity_full_stack_javascript_project_4)
 
