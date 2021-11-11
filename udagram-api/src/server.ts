@@ -15,7 +15,6 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   dotenv.config();
   console.log("test2");
 
-
   await sequelize.addModels(V0_FEED_MODELS);
   console.log("test3");
   await sequelize.addModels(V0_USER_MODELS);
@@ -45,7 +44,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
     res.send("/api/v0/");
   });
 
-  // Start the Server
+  // Start the Servery
   app.listen(process.env.PORT, () => {
     console.log(`server running ${process.env.URL}`);
     console.log(`press CTRL+C to stop server`);
