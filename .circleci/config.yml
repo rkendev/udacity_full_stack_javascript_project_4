@@ -7,10 +7,6 @@ jobs: #collection of steps to be executed in signle unit
   build:
     docker:
       - image: "cimg/base:stable"
-    filters:
-      branches:
-        only:
-          - development  
     steps: # set the collection of executable
       - node/install
       - checkout
@@ -33,7 +29,11 @@ jobs: #collection of steps to be executed in signle unit
           command: npm run frontend:build
       - run:
           name: Deploy Front-End
-          command: npm run frontend:deploy     
+          command: npm run frontend:deploy  
+    filters:
+      branches:
+        only:
+          - main           
 
 
  
