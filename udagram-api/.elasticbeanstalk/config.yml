@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: Udagramapirkenenv-env-1
+    environment: Udagramapirkenenv-env
 global:
   application_name: Udagramapirkenenv
   branch: null
