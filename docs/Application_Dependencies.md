@@ -9,4 +9,4 @@ The libraries used to build the project
 
 # Application URL
 
-http://udagram-full-stack-js-front-end-bucket-2.s3-website.eu-central-1.amazonaws.com/home
+http://udagramapirkenenv-env-1.eba-2uemazvr.eu-central-1.elasticbeanstalk.com
